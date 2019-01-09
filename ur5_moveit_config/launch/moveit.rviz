@@ -1,12 +1,14 @@
 Panels:
   - Class: rviz/Displays
-    Help Height: 84
+    Help Height: 0
     Name: Displays
     Property Tree Widget:
       Expanded:
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Metrics1
+        - /MotionPlanning1/Planned Path1
       Splitter Ratio: 0.74256
-    Tree Height: 291
+    Tree Height: 264
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -39,19 +41,34 @@ Visualization Manager:
       Enabled: true
       Move Group Namespace: ""
       MoveIt_Goal_Tolerance: 0
-      MoveIt_Planning_Time: 0
       MoveIt_Planning_Attempts: 1
+      MoveIt_Planning_Time: 0
       MoveIt_Use_Constraint_Aware_IK: true
       MoveIt_Warehouse_Host: 127.0.0.1
       MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
       Name: MotionPlanning
       Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
         Links:
           All Links Enabled: true
           Expand Joint Details: false
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
@@ -61,6 +78,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           forearm_link:
             Alpha: 1
             Show Axes: false
@@ -71,6 +89,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           upper_arm_link:
             Alpha: 1
             Show Axes: false
@@ -95,12 +117,14 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
         Show Robot Collision: false
         Show Robot Visual: true
         Show Trail: false
         State Display Time: 0.05 s
+        Trail Step Size: 1
         Trajectory Topic: /move_group/display_planned_path
       Planning Metrics:
         Payload: 1
@@ -138,6 +162,10 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           base_link:
             Alpha: 1
             Show Axes: false
@@ -147,6 +175,7 @@ Visualization Manager:
             Alpha: 1
             Show Axes: false
             Show Trail: false
+            Value: true
           forearm_link:
             Alpha: 1
             Show Axes: false
@@ -157,6 +186,10 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
+          tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
           upper_arm_link:
             Alpha: 1
             Show Axes: false
@@ -200,7 +233,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.9965
+      Distance: 3.00798
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
@@ -212,24 +245,26 @@ Visualization Manager:
         Z: 2.23518e-07
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.509797
+      Pitch: 0.104797
       Target Frame: world
       Value: XYOrbit (rviz)
-      Yaw: 5.65995
+      Yaw: 1.03176
     Saved: ~
 Window Geometry:
   Displays:
-    collapsed: false
+    collapsed: true
   Height: 876
   Help:
     collapsed: false
-  Hide Left Dock: false
+  Hide Left Dock: true
   Hide Right Dock: false
-  Motion Planning:
+  MotionPlanning:
+    collapsed: true
+  MotionPlanning - Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002a20000031cfc0200000005fb000000100044006900730070006c0061007900730100000036000001b4000000b700fffffffb0000000800480065006c00700000000342000000bb0000006500fffffffb0000000a0056006900650077007300000003b0000000b00000009b00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f0000001620000015700ffffff000003570000031c00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002a200000326fc0200000007fb000000100044006900730070006c006100790073000000002800000149000000dd00fffffffb0000000800480065006c00700000000342000000bb0000007600fffffffb0000000a0056006900650077007300000003b0000000b0000000b000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e006701000001f0000001620000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e00670000000177000001d7000001cc00ffffff000005ff0000032600000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
   Width: 1535
-  X: 65
-  Y: 24
+  X: 55
+  Y: 14
